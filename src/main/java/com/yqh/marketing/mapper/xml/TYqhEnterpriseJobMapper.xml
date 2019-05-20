@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yqh.marketing.mapper.TYqhEnterpriseJobMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yqh.marketing.entity.TYqhEnterpriseJob">
+        <id column="JOB_ID" property="jobId" />
+        <result column="ADVERTISER_ID" property="advertiserId" />
+        <result column="JOB_NMAE" property="jobNmae" />
+        <result column="JOBPERIOD_START" property="jobperiodStart" />
+        <result column="JOBPERIOD_END" property="jobperiodEnd" />
+        <result column="JOBPERIOD_COUNT" property="jobperiodCount" />
+        <result column="JOB_TITLY" property="jobTitly" />
+        <result column="JOB_TERRACE" property="jobTerrace" />
+        <result column="JOB_COMMISSION" property="jobCommission" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        JOB_ID AS jobId, ADVERTISER_ID AS advertiserId, JOB_NMAE AS jobNmae, JOBPERIOD_START AS jobperiodStart, JOBPERIOD_END AS jobperiodEnd, JOBPERIOD_COUNT AS jobperiodCount, JOB_TITLY AS jobTitly, JOB_TERRACE AS jobTerrace, JOB_COMMISSION AS jobCommission, CREATE_TIME AS createTime, UPDATE_TIME AS updateTime
+    </sql>
+
+</mapper>

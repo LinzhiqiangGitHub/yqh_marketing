@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yqh.marketing.mapper.TYqhEnterpriseUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yqh.marketing.entity.TYqhEnterpriseUser">
+        <id column="USER_ID" property="userId" />
+        <result column="USER_NAME" property="userName" />
+        <result column="USER_PASSWORD" property="userPassword" />
+        <result column="NICK_NAME" property="nickName" />
+        <result column="GENDER" property="gender" />
+        <result column="PHONE" property="phone" />
+        <result column="USER_TYPE" property="userType" />
+        <result column="TYPE_DETAILS_ID" property="typeDetailsId" />
+        <result column="USER_STATUS" property="userStatus" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        USER_ID AS userId, USER_NAME AS userName, USER_PASSWORD AS userPassword, NICK_NAME AS nickName, GENDER AS gender, PHONE AS phone, USER_TYPE AS userType, TYPE_DETAILS_ID AS typeDetailsId, USER_STATUS AS userStatus, CREATE_TIME AS createTime, UPDATE_TIME AS updateTime
+    </sql>
+
+</mapper>

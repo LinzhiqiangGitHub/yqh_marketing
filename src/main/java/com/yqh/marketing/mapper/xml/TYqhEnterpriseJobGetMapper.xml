@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yqh.marketing.mapper.TYqhEnterpriseJobGetMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yqh.marketing.entity.TYqhEnterpriseJobGet">
+        <id column="COMPLETE_ID" property="completeId" />
+        <result column="JOB_ID" property="jobId" />
+        <result column="USER_ID" property="userId" />
+        <result column="RECEIVER_NAME" property="receiverName" />
+        <result column="JOB_COMPLETE_STATUS" property="jobCompleteStatus" />
+        <result column="GIT_TIME" property="gitTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        COMPLETE_ID AS completeId, JOB_ID AS jobId, USER_ID AS userId, RECEIVER_NAME AS receiverName, JOB_COMPLETE_STATUS AS jobCompleteStatus, GIT_TIME AS gitTime, UPDATE_TIME AS updateTime
+    </sql>
+
+</mapper>

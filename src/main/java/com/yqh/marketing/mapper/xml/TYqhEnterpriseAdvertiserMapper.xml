@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yqh.marketing.mapper.TYqhEnterpriseAdvertiserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yqh.marketing.entity.TYqhEnterpriseAdvertiser">
+        <id column="ADVERTISER_ID" property="advertiserId" />
+        <result column="USER_ID" property="userId" />
+        <result column="COMPANY_NAME" property="companyName" />
+        <result column="ADVERTISER_LOGO" property="advertiserLogo" />
+        <result column="ADVERTISER_CONTACTS" property="advertiserContacts" />
+        <result column="ADVERTISER_PHONE" property="advertiserPhone" />
+        <result column="ADVERTISER_EMAIL" property="advertiserEmail" />
+        <result column="ADVERTISER_TYPE" property="advertiserType" />
+        <result column="NUMBER_TYPE" property="numberType" />
+        <result column="PAY_TYPE" property="payType" />
+        <result column="MICROSIGNAL" property="microsignal" />
+        <result column="BANK_CARD_NUMBER" property="bankCardNumber" />
+        <result column="ADVERTISER_STATUS" property="advertiserStatus" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ADVERTISER_ID AS advertiserId, USER_ID AS userId, COMPANY_NAME AS companyName, ADVERTISER_LOGO AS advertiserLogo, ADVERTISER_CONTACTS AS advertiserContacts, ADVERTISER_PHONE AS advertiserPhone, ADVERTISER_EMAIL AS advertiserEmail, ADVERTISER_TYPE AS advertiserType, NUMBER_TYPE AS numberType, PAY_TYPE AS payType, MICROSIGNAL AS microsignal, BANK_CARD_NUMBER AS bankCardNumber, ADVERTISER_STATUS AS advertiserStatus, CREATE_TIME AS createTime, UPDATE_TIME AS updateTime
+    </sql>
+
+</mapper>

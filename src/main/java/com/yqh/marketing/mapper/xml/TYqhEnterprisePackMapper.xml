@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yqh.marketing.mapper.TYqhEnterprisePackMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yqh.marketing.entity.TYqhEnterprisePack">
+        <id column="PACK_ID" property="packId" />
+        <result column="EXPERT_ID" property="expertId" />
+        <result column="JOB_ID" property="jobId" />
+        <result column="CHECKED" property="checked" />
+        <result column="CREATED_TIME" property="createdTime" />
+        <result column="UPDATED_TIME" property="updatedTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        PACK_ID AS packId, EXPERT_ID AS expertId, JOB_ID AS jobId, CHECKED AS checked, CREATED_TIME AS createdTime, UPDATED_TIME AS updatedTime
+    </sql>
+
+</mapper>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yqh.marketing.mapper.TYqhEnterpriseAccessoryMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yqh.marketing.entity.TYqhEnterpriseAccessory">
+        <id column="ACCESSORY_ID" property="accessoryId" />
+        <result column="USER_ID" property="userId" />
+        <result column="ADVERTISER_ID" property="advertiserId" />
+        <result column="JOB_ID" property="jobId" />
+        <result column="COMPLETE_ID" property="completeId" />
+        <result column="ACCESSORY_TYPE" property="accessoryType" />
+        <result column="ACCESSORY_URL" property="accessoryUrl" />
+        <result column="ACCESSORY_STATUS" property="accessoryStatus" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ACCESSORY_ID AS accessoryId, USER_ID AS userId, ADVERTISER_ID AS advertiserId, JOB_ID AS jobId, COMPLETE_ID AS completeId, ACCESSORY_TYPE AS accessoryType, ACCESSORY_URL AS accessoryUrl, ACCESSORY_STATUS AS accessoryStatus, CREATE_TIME AS createTime, UPDATE_TIME AS updateTime
+    </sql>
+
+</mapper>

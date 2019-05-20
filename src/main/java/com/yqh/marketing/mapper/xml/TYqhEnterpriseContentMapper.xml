@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yqh.marketing.mapper.TYqhEnterpriseContentMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yqh.marketing.entity.TYqhEnterpriseContent">
+        <id column="CONTENT_ID" property="contentId" />
+        <result column="TITLE" property="title" />
+        <result column="SUB_TITLE" property="subTitle" />
+        <result column="TITLE_DESC" property="titleDesc" />
+        <result column="URL" property="url" />
+        <result column="PIC" property="pic" />
+        <result column="CONTENT" property="content" />
+        <result column="CREATED" property="created" />
+        <result column="UPDATED" property="updated" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        CONTENT_ID AS contentId, TITLE AS title, SUB_TITLE AS subTitle, TITLE_DESC AS titleDesc, URL AS url, PIC AS pic, CONTENT AS content, CREATED AS created, UPDATED AS updated, CREATE_TIME AS createTime, UPDATE_TIME AS updateTime
+    </sql>
+
+</mapper>

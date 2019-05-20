@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yqh.marketing.mapper.TYqhEnterpriseJobApplyForMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yqh.marketing.entity.TYqhEnterpriseJobApplyFor">
+        <id column="JOBAPPLYFOR_ID" property="jobapplyforId" />
+        <result column="JOB_ID" property="jobId" />
+        <result column="ADVERTISER_ID" property="advertiserId" />
+        <result column="ADVERTISER_NAME" property="advertiserName" />
+        <result column="APPLY_FOR_STATUS" property="applyForStatus" />
+        <result column="APPLY_FOR_TIME" property="applyForTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        JOBAPPLYFOR_ID AS jobapplyforId, JOB_ID AS jobId, ADVERTISER_ID AS advertiserId, ADVERTISER_NAME AS advertiserName, APPLY_FOR_STATUS AS applyForStatus, APPLY_FOR_TIME AS applyForTime, UPDATE_TIME AS updateTime
+    </sql>
+
+</mapper>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yqh.marketing.mapper.TYqhEnterpriseExpertMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yqh.marketing.entity.TYqhEnterpriseExpert">
+        <id column="EXPERT_ID" property="expertId" />
+        <result column="USER_ID" property="userId" />
+        <result column="EXPERT_TYPE" property="expertType" />
+        <result column="ADMIN_NAME" property="adminName" />
+        <result column="V_ID" property="vId" />
+        <result column="INTRODUCTION" property="introduction" />
+        <result column="EMAIL" property="email" />
+        <result column="PAYTYPE" property="paytype" />
+        <result column="MICROSIGNAL" property="microsignal" />
+        <result column="BANK_CARD_NUMBER" property="bankCardNumber" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        EXPERT_ID AS expertId, USER_ID AS userId, EXPERT_TYPE AS expertType, ADMIN_NAME AS adminName, V_ID AS vId, INTRODUCTION AS introduction, EMAIL AS email, PAYTYPE AS paytype, MICROSIGNAL AS microsignal, BANK_CARD_NUMBER AS bankCardNumber, CREATE_TIME AS createTime, UPDATE_TIME AS updateTime
+    </sql>
+
+</mapper>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yqh.marketing.mapper.TYqhEnterpriseTotalAmountDetailLogMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yqh.marketing.entity.TYqhEnterpriseTotalAmountDetailLog">
+        <id column="CASHLOG_ID" property="cashlogId" />
+        <result column="TOTAL_MONEY_ID" property="totalMoneyId" />
+        <result column="JOB_ID" property="jobId" />
+        <result column="PAY_STATUS" property="payStatus" />
+        <result column="EARNINGS_STATUS" property="earningsStatus" />
+        <result column="GATHERING_STATUS" property="gatheringStatus" />
+        <result column="AMOUNT_MONEY" property="amountMoney" />
+        <result column="USER_TYPE" property="userType" />
+        <result column="USER_ID" property="userId" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        CASHLOG_ID AS cashlogId, TOTAL_MONEY_ID AS totalMoneyId, JOB_ID AS jobId, PAY_STATUS AS payStatus, EARNINGS_STATUS AS earningsStatus, GATHERING_STATUS AS gatheringStatus, AMOUNT_MONEY AS amountMoney, USER_TYPE AS userType, USER_ID AS userId, CREATE_TIME AS createTime, UPDATE_TIME AS updateTime
+    </sql>
+
+</mapper>

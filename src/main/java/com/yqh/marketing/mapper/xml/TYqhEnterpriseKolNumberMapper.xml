@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yqh.marketing.mapper.TYqhEnterpriseKolNumberMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yqh.marketing.entity.TYqhEnterpriseKolNumber">
+        <id column="NUMBER_ID" property="numberId" />
+        <result column="EXPERT_ID" property="expertId" />
+        <result column="PLATEFORM_TYPE" property="plateformType" />
+        <result column="NUMBER_NAME" property="numberName" />
+        <result column="FANS_COUNT" property="fansCount" />
+        <result column="NUMBER_TITLY" property="numberTitly" />
+        <result column="NUMBER_STATUS" property="numberStatus" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="UPDATE_TIME" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        NUMBER_ID AS numberId, EXPERT_ID AS expertId, PLATEFORM_TYPE AS plateformType, NUMBER_NAME AS numberName, FANS_COUNT AS fansCount, NUMBER_TITLY AS numberTitly, NUMBER_STATUS AS numberStatus, CREATE_TIME AS createTime, UPDATE_TIME AS updateTime
+    </sql>
+
+</mapper>

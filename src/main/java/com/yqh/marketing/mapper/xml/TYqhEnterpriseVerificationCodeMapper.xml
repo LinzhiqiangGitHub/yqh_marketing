@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yqh.marketing.mapper.TYqhEnterpriseVerificationCodeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yqh.marketing.entity.TYqhEnterpriseVerificationCode">
+        <id column="CODE_ID" property="codeId" />
+        <result column="USER_ID" property="userId" />
+        <result column="CODE" property="code" />
+        <result column="CODE_STATUS" property="codeStatus" />
+        <result column="CREATE_TIME" property="createTime" />
+        <result column="EXPIRE_TIME" property="expireTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        CODE_ID AS codeId, USER_ID AS userId, CODE AS code, CODE_STATUS AS codeStatus, CREATE_TIME AS createTime, EXPIRE_TIME AS expireTime
+    </sql>
+
+</mapper>
